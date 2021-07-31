@@ -6,9 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire de contact</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div class="boxForm">
+        <h1>Contactez-nous
+        </h1>
+
+        <form>
+            <label for="email" class="labelEmail">Entrez votre Email</label>
+            <input type="email" name="email" id="email" class="email" required maxlength="50"
+                placeholder="Entrez votre email">
+
+            <div class="flex2Inputs">
+
+                <div class="flexLeft">
+                    <label for="firstname" class="labelFlex">Entrez votre prénom</label>
+                    <input type="text" name="firstname" id="firstname" required maxlength="35" class="flex"
+                        placeholder="Entrez votre prénom">
+                </div>
+
+                <div class="flexRight">
+                    <label for="lastname" class="labelFlex">Entrez votre nom</label>
+                    <input type="text" name="lastname" id="lastname" required maxlength="35" class="flex"
+                        placeholder="Entrez votre nom">
+                </div>
+            </div>
+
+            <label for="inpSelect" class="labelSelect">Sélectionne ta catégorie</label>
+            <select name="select" id="inpSelect">
+                <option value="">Select...</option>
+                <option value="1">Option #1</option>
+                <option value="2">Option #2</option>
+                <option value="3">Option #3</option>
+            </select>
+
+            <label for="textarea" class="labelTxt">Ecrivez votre commentaire </label>
+            <textarea name="txt" id="textarea" cols="50" row="10"></textarea>
+
+            <button>Envoyer</button>
+        </form>
+    </div>
 
 </body>
 
